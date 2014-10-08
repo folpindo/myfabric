@@ -1,0 +1,6 @@
+[default]
+
+[endeca]
+;task = "yum install -y usaptool-core"
+hosts=localhost,nitro
+script=tests
