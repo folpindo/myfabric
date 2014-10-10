@@ -52,25 +52,20 @@ env.user = options.user
 #env.password = ''
 #env.hosts = ['localhost','nitro']
 env.hosts = hosts.split(",")
-
-print "Env hosts %s " % hosts
-
 env.warn_only = True
-
 
 """
 env.roledefs = {
     'remote':{
-        'hosts': ["nitro","localhost"],
+        'hosts': ["remote1","remote2"],
         'foo':'bar'
     },
     'local':{
-        'hosts': ["localhost","nitro"],
+        'hosts': ["localhost1","localhost2"],
         'foo':'buzz'
     }
 }
 """
-
 def host_type():
     try:
         if valid_process:
